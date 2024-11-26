@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="en">
+    <!--###########################################################-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Viewer</title>
+        <link rel="stylesheet" href="{% static "app/image viewer.css" %}">
+    </head>
+    <!--###########################################################-->
+    <body>
+        <div class="container">
+            <div class="header">
+                Surat Görkezýän Programma
+            </div>
+            <!---------------------------------------------->
+            <div class="image">
+                <audio id="song">
+                    <source src="">
+                </audio>
+                <img class="suratlar" src={% static "app/images/1.jpg" %} alt="surat 1">
+                <img class="suratlar" src={% static "app/images/1.png" %} alt="surat 2">
+                <img class="suratlar" src={% static "app/images/12.jpg" %} alt="surat 3">
+                <img class="suratlar" src={% static "app/images/13.jpg" %} alt="surat 4">
+                <img class="suratlar" src={% static "app/images/a.jpg" %} alt="surat 5">
+                <img class="suratlar" src={% static "app/images/kevin.png" %} alt="surat 6">
+                <img class="suratlar" src={% static "app/images/profile.jpg" %} alt="surat 7">
+                <img class="suratlar" src={% static "app/images/My.jpg" %} alt="surat 8">
+                <img class="suratlar" src={% static "app/images/photo.png" %} alt="surat 9">
+                <img class="suratlar" src={% static "app/images/profile.jpg" %} alt="surat 10">
+                <img class="suratlar" src={% static "app/images/qq.jpg" %} alt="surat 11">
+                <img class="suratlar" src={% static "app/images/profile2.jpg" %} alt="surat 12">
+                <img class="suratlar" src={% static "app/images/a.jpg" %} alt="surat 13">
+            </div>
+            <!---------------------------------------------->
+
+        </div>
+    </body>
+    <!--###########################################################-->
+    <script src={% static "app/image viewer.js" %}></script>
+</html>

@@ -1,0 +1,345 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "comic sans ms";
+    box-sizing: border-box;
+}
+/*************************************************************************/
+html {
+    scroll-behavior: smooth;
+}
+/*************************************************************************/
+body {
+    background-color: #080808;
+    color: aliceblue;
+}
+/*###############################################################################################################*/
+/*                                          Home page                                                            */
+#home-page {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+
+
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*************************************************************************/
+#home-page nav .logo {
+    /* border: 2px solid rgb(0, 38, 255); */
+    font-size: 3vw;
+    padding-left: 3%;
+}
+/*************************************************************************/
+#home-page nav {
+    /* border: 2px solid rgb(0, 38, 255); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*************************************************************************/
+#home-page nav ul {
+    /* border: 2px solid rgb(9, 255, 0); */
+    width: 40%;
+    list-style: none;
+
+    margin-right: 3%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*************************************************************************/
+#home-page nav ul li a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+}
+/*************************************************************************/
+#home-page nav ul li a::after {
+    border-radius: 30px;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: brown;
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    transition: width 0.3s linear 0s /* property duration timing-function delay */
+}
+/*************************************************************************/
+#home-page nav ul li a:hover::after {
+    width: 100%;
+}
+/*************************************************************************/
+.home-page-text {
+    /* border: 2px solid green; */
+    padding: 1% 1%;
+
+    position: relative;
+    top: 25%;
+    padding-left: 3%;
+}
+/*************************************************************************/
+.home-page-text .text-1{
+    font-size: 2vw;
+}
+/*************************************************************************/
+.home-page-text .text-2, .home-page-text .text-3{
+    font-size: 4vw;
+    font-weight: 600;
+}
+/*###############################################################################################################*/
+/*                                          About me                                                             */
+#about-me {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*************************************************************************/
+#about-me .photo img {
+    width: 82%;
+    height: 100%;
+
+    margin-left: 10%;
+
+    border-radius: 70px;
+    box-shadow: 0px 0px 100px 60px #797474;
+
+    filter: brightness(0.7);
+}
+/*************************************************************************/
+#about-me .photo {
+    /* border: 2px solid red; */
+    width: 40%;
+    height: 80%;
+
+    position:sticky;
+}
+/*************************************************************************/
+#about-me .information {
+    /* border: 2px solid rgb(0, 26, 255); */
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+/*************************************************************************/
+#about-me .information .text-1 {
+    /* border: 2px solid rgb(0, 55, 255); */
+    font-size: 4vw;
+}
+/*************************************************************************/
+#about-me .information .text-2 {
+    /* border: 2px solid rgb(0, 8, 255); */
+    font-size: 1vw;
+}
+/*************************************************************************/
+#about-me .information .text-3 {
+    /* border: 2px solid rgb(0, 21, 255); */
+    width: 50%;
+}
+/*************************************************************************/
+#about-me .information .text-3 ul li {
+    /* border: 2px solid rgb(0, 8, 255); */
+    list-style: none;
+    font-size: 1.4vw;
+
+    display: inline-flex;
+    margin-right: 10%;
+
+    position: relative;
+    cursor: pointer;
+}
+/*************************************************************************/
+#about-me .information .text-3 ul li::after {
+    content: "";
+    background-color: brown;
+    width: 0%;
+    height: 5px;
+
+    position: absolute;
+    bottom: -5px;
+    box-sizing: border-box;
+
+    transition: width 0.5s linear 0s;
+}
+/*************************************************************************/
+#about-me .information .text-3 ul li:hover::after {
+    width: 100%;
+}
+/*************************************************************************/
+#about-me .information .text-4{
+    /* border: 2px solid blue; */
+    width: 50%;
+    height: 50vh;
+}
+/*************************************************************************/
+#about-me .information .skills,
+#about-me .information .educations, 
+#about-me .information .experiences {
+    display: none;
+}
+/*************************************************************************/
+/*************************************************************************/
+#about-me .information span {
+    font-size: 1.1vw;
+    color: brown;
+}
+/*###############################################################################################################*/
+/*                                          My works                                                             */
+#my-works {
+    width: 100%;
+    height: 100vh;
+    /* border: 3px solid red; */
+    padding-left: 2%;
+    padding-right: 2%;
+}
+/*************************************************************************/
+#my-works .part-1 {
+    /* border: 3px solid red; */
+    font-size: 4vw;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+/*************************************************************************/
+#my-works .part-2 {
+    /* border: 3px solid red; */
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*************************************************************************/
+#my-works .part-2 .card-1 {
+    background-image: url("images/my works image 1.png");
+}
+/*************************************************************************/
+#my-works .part-2 .card-2 {
+    background-image: url("images/my works image 2.png");
+}
+/*************************************************************************/
+#my-works .part-2 .card-1,
+#my-works .part-2 .card-2 {
+    border: 5px solid rgb(66, 20, 20);
+    border-radius: 70px;
+    width: 20%;
+    height: 70%;
+    cursor: pointer;
+    position: relative;
+
+    text-decoration: none;
+
+    background-color:#080808;
+    box-shadow: 0px 0px 100px 60px #797474;
+
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out 0s;
+}
+/*************************************************************************/
+#my-works .part-2 .card-1::after,
+#my-works .part-2 .card-2::after {
+    content: "";
+    width: 100%;
+    height: 0%;
+    font-size: 0vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 0px 0px 0px #bfe2f9;
+    
+
+    border: 5px solid rgb(21, 20, 66);
+    border-radius: 70px;
+    background-color: blue;
+    filter: opacity(0.5) blur(1px);
+
+    position: absolute;
+    bottom: 0%;
+
+    box-sizing: border-box;
+    transition: height 0.5s ease-in-out 0s;
+}
+/*************************************************************************/
+#my-works .part-2 .card-1:hover::after {
+    content: "Music Player";
+}
+/*************************************************************************/
+#my-works .part-2 .card-2:hover::after {
+    content: "Image Viewer";
+}
+/*************************************************************************/
+#my-works .part-2 .card-1:hover::after,
+#my-works .part-2 .card-2:hover::after {
+    height: 100%;
+    font-size: 2vw;
+    color: rgb(232, 242, 164);
+    box-shadow: 0px 0px 100px 10px #bfe2f9;
+}
+/*************************************************************************/
+#my-works .part-2 .card-1:hover,
+#my-works .part-2 .card-2:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 100px 10px #bfe2f9;
+}
+/*************************************************************************/
+#my-works .part-3 {
+    /* border: 3px solid red; */
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*************************************************************************/
+#my-works .part-3 .see-more {
+    border: 3px solid red;
+    border-radius: 70px;
+    width: 13%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6vw;
+    cursor: pointer;
+
+    position: relative;
+}
+/*************************************************************************/
+#my-works .part-3 .see-more::after {
+    background-color: red;
+    border-radius: 70px;
+    content: "";
+    width: 0%;
+    height: 100%;
+    filter: opacity(0.4);
+    position: absolute;
+
+    transition: width 0.5s ease-in-out 0s;
+}
+/*************************************************************************/
+#my-works .part-3 .see-more:hover::after {
+    width: 100%;
+}
+/*************************************************************************/
+
+

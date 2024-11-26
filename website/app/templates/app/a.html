@@ -1,0 +1,114 @@
+{% load static %}
+<html lang="en">
+    <!--##########################################################################-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My CV</title>
+        <link rel="stylesheet" href="{% static "app/style1.css" %}">
+    </head> 
+    <!--##########################################################################-->
+    <body>
+        <!--                        Home Page                                     -->
+        <div id="home-page">
+            <!--------------------------------------------------->
+            <nav>
+                <div class="logo"><span style="color: brown; font-size: 4vw">S</span>apartuwak.</div>
+               
+                <ul>
+                    <li> <a href="#home-page">Home</a> </li>
+                    <li> <a href="#about-me">About me</a> </li>
+                    <li> <a href="#my-works">My works</a> </li>
+                </ul> 
+            </nav>
+            <!--------------------------------------------------->
+            <div class="home-page-text">
+                <div class="text-1">UI/UX Designer</div>
+                <div class="text-2">Hi, I am <span style="color: brown">Sapartuwak</span> </div>
+                <div class="text-3">Seidov from Turkmenistan</div>
+            </div>
+            <!--------------------------------------------------->
+        </div>
+        <!--##########################################################################-->
+        <!--                        About me                                          -->
+        <div id="about-me">             Q1``
+            <!--------------------------------------------------->
+            <div class="photo">
+                <img src={%static "app/images/My.jpg"%} alt="Profile photo">
+            </div>
+            <!--------------------------------------------------->
+            <div class="information">
+                <div class="text-1">About me</div>
+                <!--------------------------------------------------->
+                <div class="text-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia sequi dicta quam! Magni animi voluptate, 
+                    assumenda quidem deleniti quam, similique at minus quos soluta dolorem! At praesentium magnam veniam quis!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia sequi dicta quam! Magni animi voluptate, 
+                    assumenda quidem deleniti quam, similique at minus quos soluta dolorem! At praesentium magnam veniam quis!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia sequi dicta quam! Magni animi voluptate, 
+                    assumenda quidem deleniti quam, similique at minus quos soluta dolorem! At praesentium magnam veniam quis!
+                </div>
+                <!--------------------------------------------------->
+                <div class="text-3">
+                    <ul>
+                        <li id="A">Skills</li>
+                        <li id="B">Experience</li>
+                        <li id="C">Education</li>
+                    </ul>
+                </div>
+                <!--------------------------------------------------->
+                <div class="text-4">
+                    <div class="skills">
+                        <div class="skills-1"><span>UI / UX</span> <br>Designing Web/App interfaces </div>
+                        <div class="skills-2"><span>Web development</span><br>Web app development</div>
+                        <div class="skills-3"><span>App development</span><br>Building applications for desktop</div>
+
+                    </div>
+                <!--------------------------------------------------->
+                    <div class="experiences">
+                        <div class="experiences-1"><span>Experience 1</span><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                        <div class="experiences-2"><span>Experience 2</span><br>assumenda quidem deleniti quam</div>
+                        <div class="experiences-3"><span>Experience 3</span><br>assumenda quidem deleniti, sit amet consectetur</div>
+                        <div class="experiences-3"><span>Experience 4</span><br>assumenda quidem deleniti, sit amet consectetur</div>
+                    </div>
+                <!--------------------------------------------------->
+                    <div class="educations">
+                        <div class="educations-1"><span>Secondary education</span> <br>High school, Turkmenbashy, Turkmenistan </div>
+
+                        <div class="educations-2">
+                             
+                            <span>Higher education</span><br>
+                            University of Hacettepe, Faculty of Engineering, Department of Computer Engineering, Ankara, Turkey
+                        </div>
+
+                        <div class="educations-3">
+                            <span>Certificate of Programming Course</span><br>
+                            Dana Education Center, Turkmenbashy Branch, Turkmenbashy, Turkmenistan
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------->
+            </div>
+            <!--------------------------------------------------->
+        </div>
+        <!--##########################################################################-->
+        <!--                        My works                                          -->
+        <div id="my-works">
+
+            <div class="part-1">My works</div>
+            <!--------------------------------------------------->
+            <div class="part-2">
+                
+                <a href="image viewers" class="card-2"></a>
+            </div>
+            <!--------------------------------------------------->
+            <div class="part-3">
+                <a class="see-more" href="see more" style="text-decoration: none;">See more<a>
+            </div>
+
+        </div>
+        <!--------------------------------------------------->
+    </body>
+    <!--##########################################################################-->
+    <script src={% static "app/script.js" %}></script>
+</html>

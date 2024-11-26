@@ -1,0 +1,140 @@
+.container {
+    border: 2px solid red;
+    background-color: rgb(61, 60, 59);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*******************************************************************/
+.image {
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+/*******************************************************************/
+.suratlar {
+    width: 7.5%;
+    height: 70%;
+
+    filter: brightness(0);
+    z-index: 1;
+    
+    box-shadow: 7px 7px 30px rgb(49, 2, 2);
+}
+/*******************************************************************/
+.suratlar:hover {
+    animation-name: animasiya;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: normal;
+
+    transform: scale(1.5);
+    z-index: 2;
+
+    border: 0.5px solid green;
+    border-radius: 10%;
+    box-shadow: 0px 0px 20px 10px green;
+
+}
+/*******************************************************************/
+.suratlar:hover + * {
+    transform: rotateY(35deg) scale(1.2) translateX(60px);
+    z-index: 1;
+}
+/*******************************************************************/
+.suratlar:hover + * + *{
+    transform: rotateY(40deg) scale(1.1) translateX(50px);
+    z-index: 1;
+}
+/*******************************************************************/
+.suratlar:hover + * + * + *{
+    transform: rotateY(20deg) scale(1) translateX(10px);
+    z-index: 1;
+}
+/*******************************************************************/
+.suratlar:has(+*:hover) {
+    transform: rotateY(-35deg) scale(1.2) translateX(-60px);
+    z-index: 1;
+}
+/*******************************************************************/
+.suratlar:has(+*+*:hover) {
+    transform: rotateY(-40deg) scale(1.1) translateX(-50px);
+    z-index: 1;
+}
+/*******************************************************************/
+.suratlar:has(+*+*+*:hover) {
+    transform: rotateY(-20deg) scale(1) translateX(-10px);
+    z-index: 1;
+}
+/*******************************************************************/
+@keyframes animasiya {
+    0% {
+        filter: brightness(0);
+    }
+    100% {
+        filter: brightness(0.9);
+    }
+}
+/*******************************************************************/
+.header {
+    width: 100%;
+    
+    font-size: 100px;
+    font-family: "comic sans ms";
+    text-align: center;
+
+    color: cadetblue;
+
+    text-shadow: 0px 0px 25px cadetblue;
+}
+/*******************************************************************/
+.footer {
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    
+    font-size: 50px;
+    font-family: "comic sans ms";
+}
+/*******************************************************************/
+#author {
+    width: 10%;
+
+    position: relative;
+    left: 75%;
+ 
+}
+/*******************************************************************/
+#author-name {
+    width: 13%;
+    position: relative;
+    left: 73%;
+}
+/*******************************************************************/
+#author-profession {
+    width: 35%;
+    position: relative;
+    left: 63%;
+}
+/*******************************************************************/
+.F {
+    font-size: 40px;
+    font-family: "comic sans ms";
+    text-align: center;
+
+    color: gold;
+
+    text-shadow: 0px 0px 25px yellow;
+}
